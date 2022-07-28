@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Emoji Display</title>
+<meta name="theme-color" content="#0F65BDF7">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="type">
+    <button class="type" value="&#">&#</button>
+    <button class="type">emoji</button>
+    <button class="type" value="&#x">&#x</button>
+  </div>
+  <p id="error"></p>
+  <div id="screen">
+    <p id="rangeValue"></p>
+    <span id="emoji"></span>
+  </div>
+  <div id="control">
+    <button id="minus">&minus;</button>
+    <input type="range" min="110" max="1000" id="range" value="110">
+    <button id="plus">&plus;</button>
+  </div>
+  <div class="flex">
+    <input type="number" id="number" max="1000" min="0">
+    <input type="submit" value="Enter range" onclick="marvel()">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
